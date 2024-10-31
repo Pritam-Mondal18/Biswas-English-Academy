@@ -4,15 +4,6 @@ function Gallary({ gallaryRef }) {
   return (
     <>
       <div ref={gallaryRef} className="gallary-container">
-        <div className="contact-heading">
-          <hr />
-          <hr />
-          <hr />
-          <h1>Gallery</h1>
-          <hr />
-          <hr />
-          <hr />
-        </div>
         <div className="card">
           <img src="/images/1.jpg" alt="" className="card-img" />
         </div>

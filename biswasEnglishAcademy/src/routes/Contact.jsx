@@ -12,15 +12,6 @@ function Contact({ contactRef }) {
   return (
     <>
       <div ref={contactRef} className="contact-container">
-        <div className="contact-heading">
-          <hr />
-          <hr />
-          <hr />
-          <h1>Contact Us</h1>
-          <hr />
-          <hr />
-          <hr />
-        </div>
         <div className="contact">
           <div className="contact-Social">
             <div className="detailes">

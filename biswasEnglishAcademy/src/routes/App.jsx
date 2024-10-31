@@ -7,7 +7,6 @@ import About from "./About";
 import Contact from "./Contact";
 import Gallary from "./Gallary";
 import Services from "./Services";
-import Arrow from "./Arrow";
 // import Footer from "../components/Footer";
 
 const App = () => {
