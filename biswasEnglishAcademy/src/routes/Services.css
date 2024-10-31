@@ -1,0 +1,7 @@
+.services-container {
+  padding-top: 90px;
+  width: 100vw;
+  min-height: 100vh;
+  background: coral;
+  transition: 0.5s;
+}

@@ -1,0 +1,32 @@
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  width: 100vw;
+  height: 100vh;
+  background: #ced8ff;
+  transition: 0.5s;
+}
+.about-paragraph {
+  margin: 20px;
+  /* background-color: gold; */
+  height: 80vh;
+  width: 50vw;
+}
+.about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  /* background-color: blueviolet; */
+  height: 80vh;
+  width: 38vw;
+}
+.about-container .about-img .roadmap {
+  /* padding: 20px; */
+  height: 80vh;
+  width: 40vw;
+}
+.paragraph.about {
+  font-size: 20px;
+}

@@ -1,0 +1,68 @@
+.banner-img {
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+.home-container {
+  padding-top: 95px;
+  width: 100vw;
+  min-height: 100vh;
+  background: #ced8ff;
+  transition: 0.5s;
+  /* display: flex; */
+}
+
+.home-heading p {
+  margin: 10px;
+}
+.home-heading .sub-heading {
+  padding-left: 210px;
+}
+.paragraph-animation {
+  display: flex;
+}
+.paragraph {
+  margin: 20px;
+  color: darkblue;
+  font-size: 20px;
+}
+.paragraph pre {
+  padding: 15px;
+  width: 60vw;
+  height: 350px;
+  /* background-color: goldenrod; */
+}
+.animation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  width: 35vw;
+  /* background-color: darkcyan; */
+}
+.numberAnimation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  height: 50vh;
+  width: 230px;
+}
+.animationIcon {
+  color: #aa0386;
+}
+.animationText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.animationText h2 {
+  color: darkblue;
+  font-size: 40px;
+}
+.scrollNumber {
+  color: blueviolet;
+  font-size: 40px;
+}

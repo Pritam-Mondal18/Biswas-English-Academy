@@ -1,0 +1,142 @@
+.contact-heading {
+  /* margin: 20px; */
+  padding: 20px;
+  background: #ced8ff;
+}
+
+.contact-container {
+  padding-top: 100px;
+  width: 100vw;
+  height: 250vh;
+  background: #ced8ff;
+  transition: 0.5s;
+}
+.contact {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-Social {
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 48vw;
+  border-radius: 15px;
+}
+.detailes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  height: 30vh;
+  width: 40vw;
+  border-radius: 15px;
+}
+.detailes-icon {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  height: 20vh;
+  width: 40vw;
+  border-radius: 15px;
+}
+.icon a,
+.facebook a,
+.insta a,
+.whatsapp a,
+.youtube a {
+  cursor: pointer;
+  color: deeppink;
+  font-size: 30px;
+}
+.icon a:hover {
+  color: darkblue;
+}
+.icon:hover {
+  color: darkblue;
+}
+.detailes-icon .facebook .icon:hover {
+  cursor: pointer;
+  color: #1877f2;
+}
+.detailes-icon .whatsapp .icon:hover {
+  cursor: pointer;
+  color: #25d366;
+}
+.detailes-icon .insta .icon:hover {
+  cursor: pointer;
+  color: rgb(227, 114, 174);
+}
+.detailes-icon .youtube .icon:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+.detailes-heading {
+  margin: 10px;
+}
+.contact-Map {
+  padding: 5px;
+  align-items: center;
+  height: 90vh;
+  width: 48vw;
+  border-radius: 15px;
+}
+.contact-Map iframe {
+  border-radius: 15px;
+}
+.contact-from {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 100px;
+  padding: 5px;
+  height: 35%;
+  width: 80%;
+}
+.contact-from-img {
+  height: 80vh;
+}
+.contact-from-info {
+  padding: 10px;
+  height: 80vh;
+  width: 50vw;
+}
+.contact-from-info h2 {
+  font-size: 35px;
+}
+.man-img {
+  height: 80vh;
+}
+form label input {
+  padding: 20px;
+  margin: 30px;
+  height: 40px;
+  width: 19vw;
+  border-radius: 10px;
+}
+form label textarea {
+  padding: 20px;
+  margin: 30px;
+  height: 100px;
+  width: 43vw;
+  border-radius: 10px;
+}
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 30px;
+  font-size: 20px;
+  text-align: center;
+  background-color: crimson;
+  color: #ced8ff;
+  height: 50px;
+  width: 43vw;
+  border-radius: 10px;
+  cursor: pointer;
+}
