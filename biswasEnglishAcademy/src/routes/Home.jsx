@@ -10,10 +10,12 @@ function Home({ homeRef }) {
   return (
     <>
       <div ref={homeRef} className="home-container">
+        {/* attached banner */}
         <div className="banner">
           {" "}
           <img src="/images/banner.jpg" alt="" className="banner-img" />
         </div>
+        {/* give a heading */}
         <div className="home-heading">
           <p>
             <h1>
@@ -26,43 +28,31 @@ function Home({ homeRef }) {
             </span>
           </p>
         </div>
-        <div className="paragraph-animation">
+        <div className="paragraph-home">
           <span className="paragraph">
-            <pre>
-              At BISWAS ENGLISH ACADEMY, we believe that language is the bridge
-              to endless <br />
-              opportunities. career, or excel in academics, our carefully
-              crafted English courses
-              <br /> cater to every learner’s needs. Are you a teen preparing
-              for the future? A professional <br />
-              aiming to impress? A homemaker ready to conquer new horizons? Or a
-              student striving <br />
-              for academic excellence? You’ve come to the right place. Our
-              dynamic spoken English
-              <br /> programs for teens, adults, homemakers, and professionals
-              are designed to give you <br />
-              the confidence and skillset to thrive in today’s fast-paced world.
-              For students from 5th
-              <br /> to 12th standard, our academic English classes ensure that
-              you’re not just learning to
-              <br /> pass exams but mastering the language for life. We support
-              you through every stage of
-              <br /> your learning journey, building the foundation for a bright
-              future. Step into a world
-              <br /> where learning English is not just about grammar and
-              vocabulary—it’s about empower-
-              <br />
-              ment, growth, and transformation. Let’s embark on this journey
-              together, where each <br />
-              lesson brings you closer to success, and every word you speak
-              becomes a stepping stone
-              <br /> toward your goals.
-            </pre>
+            At BISWAS ENGLISH ACADEMY, we believe that language is the bridge to
+            endless opportunities. career, or excel in academics, our carefully
+            crafted English courses cater to every learner’s needs. Are you a
+            teen preparing for the future? A professional aiming to impress? A
+            homemaker ready to conquer new horizons? Or a student striving for
+            academic excellence? You’ve come to the right place. Our dynamic
+            spoken English programs for teens, adults, homemakers, and
+            professionals are designed to give you the confidence and skillset
+            to thrive in today’s fast-paced world. For students from 5th to 12th
+            standard, our academic English classes ensure that you’re not just
+            learning to pass exams but mastering the language for life. We
+            support you through every stage of your learning journey, building
+            the foundation for a bright future. Step into a world where learning
+            English is not just about grammar and vocabulary—it’s about empower-
+            ment, growth, and transformation. Let’s embark on this journey
+            together, where each lesson brings you closer to success, and every
+            word you speak becomes a stepping stone
+            <br /> toward your goals.
           </span>
-          <div className="animation">
+          <span className="animation">
             <div className="numberAnimation">
               <div className="animationIcon">
-                <FaBusinessTime size={100} />
+                <FaBusinessTime className="icons" />
               </div>
               <ScrollTrigger
                 onEnter={() => setcounterStart(true)}
@@ -87,7 +77,7 @@ function Home({ homeRef }) {
             </div>
             <div className="numberAnimation">
               <div className="animationIcon">
-                <PiStudentFill size={100} />
+                <PiStudentFill className="icons" />
               </div>
               <ScrollTrigger
                 onEnter={() => setcounterStart(true)}
@@ -110,7 +100,7 @@ function Home({ homeRef }) {
                 </div>
               </ScrollTrigger>
             </div>
-          </div>
+          </span>
         </div>
       </div>
     </>
