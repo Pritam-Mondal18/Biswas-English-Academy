@@ -26,7 +26,7 @@ function Home({ homeRef }) {
             </span>
           </p>
         </div>
-        {/*<div className="paragraph-animation">
+        <div className="paragraph-animation">
           <span className="paragraph">
             <pre>
               At BISWAS ENGLISH ACADEMY, we believe that language is the bridge
@@ -111,7 +111,7 @@ function Home({ homeRef }) {
               </ScrollTrigger>
             </div>
           </div>
-        </div>*/}
+        </div>
       </div>
     </>
   );

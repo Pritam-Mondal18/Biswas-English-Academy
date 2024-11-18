@@ -3,7 +3,7 @@ import "./Gallary.css";
 function Gallary({ gallaryRef }) {
   return (
     <>
-      <div ref={gallaryRef} className="gallary-container">
+      {/* <div ref={gallaryRef} className="gallary-container">
         <div className="card">
           <img src="/images/1.jpg" alt="" className="card-img" />
         </div>
@@ -23,7 +23,7 @@ function Gallary({ gallaryRef }) {
         <div className="card">
           <img src="/images/6.jpg" alt="" className="card-img" />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
