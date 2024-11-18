@@ -4,10 +4,9 @@
   min-width: 100%;
 }
 .home-container {
-  padding-top: 95px;
+  padding-top: 94px;
   width: 100vw;
   min-height: 80vh;
-  /* background-color: red; */
   background: #ced8ff;
   transition: 0.5s;
 }
@@ -26,6 +25,7 @@
   font-size: 20px;
 }
 .animation {
+  background-color: #aa0386;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,7 @@
 }
 .animationIcon .icons {
   color: #aa0386;
-  font-size: 100px;
+  font-size: 90px;
 }
 .animationText {
   display: flex;
@@ -54,7 +54,7 @@
 }
 .animationText h2 {
   color: darkblue;
-  font-size: 40px;
+  font-size: 35px;
 }
 .scrollNumber {
   color: blueviolet;
@@ -84,17 +84,12 @@
   .animationIcon .icons {
     font-size: 30px;
   }
-  /* .animation {
-    height: 80px;
-    padding: 20px;
-  } */
 }
 @media (max-width: 1025px) {
   .home-container {
     display: flex;
     flex-direction: column;
     min-height: 63vh;
-    /* background-color: green; */
   }
   .home-heading p {
     font-size: 20px;
