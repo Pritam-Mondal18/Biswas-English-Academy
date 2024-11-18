@@ -1,32 +1,22 @@
 import React, { useState } from "react";
 import "./Header.css";
-// import { NavLink as ScrollNavLink } from "react-scroll";
-// import { Link } from "react-scroll";
-// import { NavLink as RouterNavLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { NavLink as RouterLink } from "react-router-dom";
-import { IoPersonCircleSharp, IoClose, IoHome } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaPhone, FaMoon, FaSearch } from "react-icons/fa";
-import Home from "../routes/Home";
-import About from "../routes/About";
-// import { MdInsertPhoto, MdOutlineWork } from "react-icons/md";
-// import { AiOutlineFileUnknown } from "react-icons/ai";
+import { IoCloseSharp } from "react-icons/io5";
+import { FaMoon } from "react-icons/fa";
 
 const Header = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
-  // const [isSidebarVisible, setSidebarVisible] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-  const toggle_mode = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+  // Toggle menu visibility
+  const handleMenuToggle = () => {
+    setShowMenu((prev) => !prev);
   };
 
-  const showSidebar = () => setSidebarVisible(true);
-  const closeSidebar = () => setSidebarVisible(false);
-
-  //scroll To Components
-
+  // Scroll to the referenced section
   const scrollToElement = (elementRef) => {
-    if (elementRef.current) {
+    if (elementRef?.current) {
       window.scrollTo({
         top: elementRef.current.offsetTop,
         behavior: "smooth",
@@ -34,113 +24,89 @@ const Header = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
     }
   };
 
+  // Placeholder for dark mode toggle
+  const [theme, setTheme] = useState("light");
+  const toggleMode = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
+
   return (
     <>
+      {/* Navbar */}
       <div className="navbar">
-        <span>
-          <RouterLink to="/">
-            <img src="/images/Final-logo.jpg" alt="" className="logo" />
-          </RouterLink>
-        </span>
+        <RouterLink to="/">
+          <img src="/images/Final-logo.jpg" alt="Logo" className="logo" />
+        </RouterLink>
         <h3 className="heading">Biswas English Academy</h3>
-        <ul>
-          <ScrollLink
-            onClick={() => scrollToElement(homeRef)}
-            to="/"
-            smooth={true}
-            duration={500}
-            className="action_container"
-          >
-            <span>Home</span>
-          </ScrollLink>
-          <ScrollLink
-            onClick={() => scrollToElement(aboutRef)}
-            to="/about"
-            smooth={true}
-            duration={500}
-            className="action_container"
-          >
-            <span>About</span>
-          </ScrollLink>
-          <ScrollLink
-            onClick={() => scrollToElement(servicesRef)}
-            to="/services"
-            smooth={true}
-            duration={500}
-            className="action_container"
-          >
-            <span>Services</span>
-          </ScrollLink>
-
-          <ScrollLink
-            onClick={() => scrollToElement(gallaryRef)}
-            to="/gallery"
-            smooth={true}
-            duration={500}
-            className="action_container"
-          >
-            <span>Gallery</span>
-          </ScrollLink>
-          <ScrollLink
-            onClick={() => scrollToElement(contactRef)}
-            to="/contact"
-            smooth={true}
-            duration={500}
-            className="action_container"
-          >
-            <span>Contact</span>
-          </ScrollLink>
-          <ScrollLink className="action_container">Reviews</ScrollLink>
+        <ul className={`menu-items ${showMenu ? "menu-mobile" : "menu-web"}`}>
+          <li>
+            <ScrollLink
+              onClick={() => {
+                scrollToElement(homeRef);
+                setShowMenu(false);
+              }}
+              smooth={true}
+              duration={500}
+            >
+              Home
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              onClick={() => {
+                scrollToElement(aboutRef);
+                setShowMenu(false);
+              }}
+              smooth={true}
+              duration={500}
+            >
+              About
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              onClick={() => {
+                scrollToElement(servicesRef);
+                setShowMenu(false);
+              }}
+              smooth={true}
+              duration={500}
+            >
+              Services
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              onClick={() => {
+                scrollToElement(gallaryRef);
+                setShowMenu(false);
+              }}
+              smooth={true}
+              duration={500}
+            >
+              Gallery
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              onClick={() => {
+                scrollToElement(contactRef);
+                setShowMenu(false);
+              }}
+              smooth={true}
+              duration={500}
+            >
+              Contact
+            </ScrollLink>
+          </li>
         </ul>
-        {/* <div className="search-box">
-          <input type="text" placeholder="search" />
-          <FaSearch className="search-icon" />
-        </div> */}
-        <FaMoon onClick={toggle_mode} className="toggle-icon" />
-        <IoPersonCircleSharp className="toggle-icon" />
-        <div className="menu showSidebar" onClick={showSidebar}>
-          <GiHamburgerMenu />
-        </div>
+        <FaMoon onClick={toggleMode} className="toggle-icon" />
+        <span className="menu-icon" onClick={handleMenuToggle}>
+          {showMenu ? <IoCloseSharp /> : <GiHamburgerMenu />}
+        </span>
       </div>
-      {/*sidebar*/}
-      {/* <div className={`navbar sidebar ${isSidebarVisible ? "visible" : ""}`}>
-        <div className="menu closeSidebar" onClick={closeSidebar}>
-          <IoClose />
-        </div>
-        <ul>
-          <RouterNavLink to="/" className="action_container_of_sidebar">
-            <div className="icons">
-              <IoHome />
-              <span className="span">Home</span>
-            </div>
-          </RouterNavLink>
-          <RouterNavLink to="/about" className="action_container_of_sidebar">
-            <div className="icons">
-              <AiOutlineFileUnknown />
-              <span className="span">About</span>
-            </div>
-          </RouterNavLink>
-          <RouterNavLink to="/contact" className="action_container_of_sidebar">
-            <div className="icons">
-              <FaPhone />
-              <span className="span">Contact</span>
-            </div>
-          </RouterNavLink>
-          <RouterNavLink to="/gallery" className="action_container_of_sidebar">
-            <div className="icons">
-              <MdInsertPhoto />
-              <span className="span">Gallery</span>
-            </div>
-          </RouterNavLink>
-          <RouterNavLink to="/services" className="action_container_of_sidebar">
-            <div className="icons">
-              <MdOutlineWork />
-              <span className="span">Services</span>
-            </div>
-          </RouterNavLink>
-        </ul>
-      </div> */}
     </>
   );
 };
+
 export default Header;

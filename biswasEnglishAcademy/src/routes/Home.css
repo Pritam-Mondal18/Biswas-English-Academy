@@ -66,3 +66,14 @@
   color: blueviolet;
   font-size: 40px;
 }
+
+/* Mobile Responsive Styling */
+.banner-img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
