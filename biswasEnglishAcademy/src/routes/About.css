@@ -30,3 +30,120 @@
 .paragraph.about {
   font-size: 20px;
 }
+
+/* Mobile Responsive Styling */
+@media (max-width: 1025px) {
+  .about-container {
+    height: 100vh;
+    display: flex;
+  }
+  .about-container .about-img .roadmap {
+    margin-top: -30px;
+    height: 70vh;
+    width: 40vw;
+  }
+  .paragraph.about {
+    font-size: 16px;
+  }
+}
+@media (max-width: 821px) {
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 106.6vw;
+  }
+  .about-container .about-img .roadmap {
+    height: 40vh;
+    width: 80vw;
+    margin: 0px 0px 98px 485px;
+  }
+  .about-paragraph {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+  }
+  .paragraph.about {
+    font-size: 18px;
+  }
+}
+@media (max-width: 431px) {
+  .about-container {
+    width: 120vw;
+  }
+  .about-paragraph {
+    width: 100vw;
+    display: flex;
+  }
+  .paragraph.about {
+    font-size: 12px;
+  }
+  .about-container .about-img .roadmap {
+    margin: 0 190px 98px 485px;
+  }
+}
+@media (max-width: 541px) {
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 106.6vw;
+  }
+  .about-container .about-img .roadmap {
+    height: 40vh;
+    width: 80vw;
+    margin: 0 252px 20px 485px;
+  }
+  .about-paragraph {
+    width: 100vw;
+    display: flex;
+  }
+  .paragraph.about {
+    font-size: 12px;
+  }
+}
+@media (max-width: 431px) {
+  .about-container {
+    width: 120vw;
+  }
+}
+@media (max-width: 376px) {
+  .about-container {
+    height: 123vh;
+    width: 115vw;
+  }
+  .about-container .about-img .roadmap {
+    margin: 32px 267px 0px 485px;
+  }
+}
+
+@media (max-width: 361px) {
+  .about-container {
+    height: 130vh;
+    width: 115vw;
+  }
+  .about-paragraph {
+    height: 100vh;
+  }
+}
+@media (max-width: 345px) {
+  .about-container {
+    height: 130vh;
+    width: 115vw;
+  }
+  .about-paragraph {
+    height: 100vh;
+  }
+  .about-container .about-img .roadmap {
+    margin: -137px 266px 86px 485px;
+  }
+}
+@media (max-width: 321px) {
+  .about-container {
+    height: 175vh;
+    width: 115vw;
+  }
+  .about-container .about-img .roadmap {
+    margin: 0px 267px 266px 485px;
+  }
+}
