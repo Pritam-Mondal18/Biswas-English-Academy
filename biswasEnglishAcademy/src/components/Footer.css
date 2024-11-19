@@ -1,234 +1,80 @@
-/*
-
-.social-icon-link {
-  color: #fff;
-  font-size: 24px;
-}
-.social-icon-link:hover {
-  color: rgb(255, 240, 24);
-  font-size: 24px;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 240px;
-}
-.facebook:hover {
-  color: #5890ff;
-}
-.whatsapp:hover {
-  color: #25d366;
-}
-.instagram:hover {
-  color: #cc2366;
-}
-.youtube:hover {
-  color: #cd201f;
-}
-.social-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 240px;
-  color: rgb(255, 251, 6);
-}
-.social-logo {
-  color: #fff;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.social-logo:hover {
-  color: rgb(239, 243, 9);
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.website-rights {
-  color: #fff;
-  margin-bottom: 16px;
-}
-.website-rights:hover {
-  color: rgb(255, 231, 17);
-  margin-bottom: 16px;
-}
-@media screen and (max-width: 820) {
-  .footer-links {
-    padding-top: 2rem;
-  }
-  .btn {
-    width: 100%;
-  }
-  .footer-link-wrapper {
-    flex-direction: column;
-  }
-  .social-midia-wrap {
-    flex-direction: column;
-  }
-} */
 .footer-container {
   background-color: #101522; /* Dark background */
-  padding: 48px 24px;
+  width: 100vw;
+  padding: 50px;
   color: #fff; /* White text */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
-
-.footer-subscription {
+.social-links-container,
+.contact-details,
+.courses {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 24px;
-}
-
-.footer-subscription-heading {
-  margin-bottom: 24px;
-  font-size: 24px;
   text-align: center;
+  padding: 15px;
+  /* background-color: yellowgreen; */
+  height: 60vh;
+  width: 25vw;
 }
-
-.input-areas {
+.social-links-container .logo {
+  margin-left: 100px;
+  padding-bottom: 5px;
+}
+.social-links-container b {
+  font-size: 25px;
+}
+.social-links-container p {
+  text-align: start;
+  padding: 15px;
+  font-size: 18px;
+}
+.social-links {
+  height: 15vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: last baseline;
+  font-size: 25px;
+  justify-content: space-between;
 }
-
-.footer-input {
-  padding: 10px 20px;
-  border-radius: 2px;
-  border: none;
-  margin-right: 10px;
-  font-size: 16px;
-}
-
-.footer-btn {
-  padding: 10px 20px;
-  border-radius: 4px;
-  border: none;
-  background-color: #4b59f7; /* Primary button color */
-  color: #fff;
+.icon a,
+.facebook a,
+.insta a,
+.whatsapp a,
+.youtube a {
   cursor: pointer;
-  transition: background 0.3s ease;
+  color: deeppink;
+  font-size: 30px;
+}
+.icon a:hover {
+  color: darkblue;
+}
+.icon:hover {
+  color: darkblue;
+}
+.social-links .facebook .icon:hover {
+  cursor: pointer;
+  color: #1877f2;
+}
+.social-links .whatsapp .icon:hover {
+  cursor: pointer;
+  color: #25d366;
+}
+.social-links .insta .icon:hover {
+  cursor: pointer;
+  color: rgb(227, 114, 174);
+}
+.social-links .youtube .icon:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+.contact-details,
+.courses {
+  font-size: 20px;
 }
 
-.footer-btn:hover {
-  background-color: #0467fb; /* Darker shade on hover */
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column; /* Stack links vertically on small screens */
-  align-items: center; /* Center align links */
-  padding: 32px 0;
-}
-
-.footer-link-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  max-width: 1000px; /* Max width for larger screens */
-  width: 100%; /* Full width */
-}
-
-.footer-link-items {
-  margin: 16px;
-  flex: 1; /* Flex-grow to make items responsive */
-  min-width: 200px; /* Minimum width for footer link items */
-}
-
-.footer-link-items h2 {
-  margin-bottom: 16px;
-}
-
-.footer-link-items a {
-  color: #fff; /* White text */
-  text-decoration: none;
-  margin-bottom: 10px;
-  font-size: 14px;
-  transition: color 0.3s ease;
-}
-
-.footer-link-items a:hover {
-  color: #4b59f7; /* Change color on hover */
-}
-
-.social-media {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.social-media-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; /* Ensure it takes full width */
-}
-
-.social-icons {
-  display: flex;
-  justify-content: space-between;
-  width: 240px; /* Fixed width for icons */
-}
-
-.social-icon-link {
-  color: #fff; /* White icons */
-  font-size: 24px;
-  transition: color 0.3s ease;
-}
-
-.social-icon-link:hover {
-  color: #4b59f7; /* Change color on hover */
-}
-
-.website-rights {
-  margin: 16px;
-  color: #fff;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .footer-links {
-    flex-direction: column; /* Stack links vertically */
-  }
-
-  .social-icons {
-    width: 100%; /* Full width for social icons on small screens */
-    justify-content: center; /* Center social icons */
-  }
-
-  .footer-link-items {
-    text-align: center; /* Center align link items */
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-subscription-heading {
-    font-size: 20px; /* Adjust font size for smaller screens */
-  }
-
-  .footer-input {
-    width: 70%; /* Input width adjustment */
-  }
-
-  .footer-btn {
-    width: 20%; /* Button width adjustment */
-  }
+.end-footer {
+  background-color: brown;
+  height: 10vh;
+  width: 100vw;
 }

@@ -5,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 function Contact({ contactRef }) {
   const googleMapsUrl = "https://maps.app.goo.gl/EHPM36NnWUgL2mF79";
@@ -81,7 +81,7 @@ function Contact({ contactRef }) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaInstagramSquare className="icon" />
+                  <FaInstagram className="icon" />
                 </a>
               </div>
               <div className="youtube">

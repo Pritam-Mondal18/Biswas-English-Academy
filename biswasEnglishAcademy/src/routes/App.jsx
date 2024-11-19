@@ -7,7 +7,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Gallary from "./Gallary";
 import Services from "./Services";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -39,7 +39,7 @@ const App = () => {
       <Services servicesRef={servicesRef} />
       <Gallary gallaryRef={gallaryRef} />
       <Contact contactRef={contactRef} />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
