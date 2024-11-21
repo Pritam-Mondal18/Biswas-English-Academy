@@ -1,8 +1,4 @@
-/* .gallary-container.gallary-heading hr {
-  color: darkblue;
-} */
 .gallary-container {
-  /* padding: 20px; */
   display: flex;
   flex-wrap: wrap;
   padding-top: 100px;
@@ -11,20 +7,18 @@
   background: #ced8ff;
   transition: 0.5s;
 }
-.card {
-  margin: 15px;
+.lg-react-element {
+  column-count: 3;
+  column-gap: 10px;
 }
-.card-img {
-  /* padding: 15px; */
-  /* margin: 15px; */
-  height: 300px;
-  width: 400px;
-  border-radius: 25px;
+img.gallary {
+  max-width: 100%;
+  display: block;
+  padding: 5px 0;
+  border-radius: 20px;
+  transition: transform 0.2s;
 }
-hr {
-  width: 25vw;
-}
-.gallary-heading {
-  padding: 20px;
-  background: #ced8ff;
+img.gallary:hover {
+  filter: opacity(0.8);
+  transform: scale(1.01);
 }
