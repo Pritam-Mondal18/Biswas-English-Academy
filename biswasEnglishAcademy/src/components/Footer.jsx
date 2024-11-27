@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import { NavLink as RouterNavLink } from "react-router-dom";
 // import { NavLink as ScrollNavLink } from "react-scroll";
 import { CiRoute } from "react-icons/ci";
@@ -9,10 +10,19 @@ import { FaInstagram } from "react-icons/fa";
 import { GrMap } from "react-icons/gr";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
-import { FaRegCopyright } from "react-icons/fa";
 
 import "./Footer.css";
-const Footer = () => {
+const Footer = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
+  const [showMenu, setShowMenu] = useState(false);
+  // Scroll to the referenced section
+  const scrollToElement = (elementRef) => {
+    if (elementRef?.current) {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <>
       <div className="footer-container">
@@ -91,12 +101,67 @@ const Footer = () => {
         <div className="courses">
           COURSES
           <div className="course">
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Gallary</li>
-              <li>Contact</li>
+            <ul className={showMenu ? "menu-open" : "menu-closed"}>
+              <li>
+                <ScrollLink
+                  onClick={() => {
+                    scrollToElement(homeRef);
+                    setShowMenu(false);
+                  }}
+                  smooth={true}
+                  duration={500}
+                >
+                  Home
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  onClick={() => {
+                    scrollToElement(aboutRef);
+                    setShowMenu(false);
+                  }}
+                  smooth={true}
+                  duration={500}
+                >
+                  About
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  onClick={() => {
+                    scrollToElement(servicesRef);
+                    setShowMenu(false);
+                  }}
+                  smooth={true}
+                  duration={500}
+                >
+                  Services
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  onClick={() => {
+                    scrollToElement(gallaryRef);
+                    setShowMenu(false);
+                  }}
+                  smooth={true}
+                  duration={500}
+                >
+                  Gallery
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  onClick={() => {
+                    scrollToElement(contactRef);
+                    setShowMenu(false);
+                  }}
+                  smooth={true}
+                  duration={500}
+                >
+                  Contact
+                </ScrollLink>
+              </li>
             </ul>
           </div>
         </div>

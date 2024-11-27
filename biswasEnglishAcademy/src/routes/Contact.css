@@ -44,6 +44,7 @@
   height: 20vh;
   width: 40vw;
   border-radius: 15px;
+  /* background-color: #1877f2; */
 }
 .icon a,
 .facebook a,
@@ -82,9 +83,13 @@
 .contact-Map {
   padding: 5px;
   align-items: center;
-  height: 90vh;
-  width: 48vw;
+  /* height: 600vh; */
+  /* width: 600vw; */
   border-radius: 15px;
+}
+.contact-Map iframe {
+  height: 80vh;
+  width: 50vw;
 }
 .contact-Map iframe {
   border-radius: 15px;
@@ -139,4 +144,73 @@ form button {
   width: 43vw;
   border-radius: 10px;
   cursor: pointer;
+}
+/* responsive*/
+@media (max-width: 361px) {
+  .contact-container {
+    width: 189vw;
+    height: 460vh;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-Map {
+    height: 90vh;
+    padding: 150px;
+  }
+  .contact-Map iframe {
+    padding-top: 0px;
+    height: 70vh;
+    width: 570px;
+  }
+  .detailes-icon {
+    margin-left: -70px;
+    width: 90vw;
+  }
+  .detailes {
+    margin-left: -70px;
+    width: 90vw;
+    background-color: #25d366;
+  }
+  .contact-from {
+    /* background-color: #25d366; */
+    margin-left: 20px;
+    padding-top: 10px;
+    display: table-cell;
+  }
+  /* .contact-from-img {
+    background-color: #1877f2;
+    padding-top: 10px;
+    height: 68vh;
+  } */
+  .man-img {
+    padding-left: 102px;
+    height: 95vh;
+  }
+  .contact-from-info {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 80vh;
+    width: 100vw;
+  }
+  .contact-from-info h2 {
+    padding-left: 50px;
+  }
+  form label input {
+    padding: 20px;
+    margin: 30px;
+    height: 70px;
+    width: 151vw;
+    border-radius: 10px;
+  }
+  form label textarea {
+    padding: 20px;
+    margin: 30px;
+    /* height: 70px; */
+    width: 151vw;
+    border-radius: 10px;
+  }
 }

@@ -134,7 +134,8 @@
 }
 @media (max-width: 361px) {
   .navbar {
-    width: 115vw;
+    width: -webkit-fill-available;
+    background-color: cadetblue;
   }
 }
 

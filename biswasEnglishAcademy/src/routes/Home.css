@@ -183,10 +183,10 @@
   }
   .scrollNumber,
   .numberAnimation .animationText h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .animationIcon .icons {
-    font-size: 30px;
+    font-size: 60px;
   }
   .numberAnimation {
     height: 12vh;
@@ -223,16 +223,28 @@
 }
 @media (max-width: 361px) {
   .home-container {
-    width: 115vw;
+    width: 189vw;
   }
   .home-heading p {
-    font-size: 8px;
+    font-size: 18px;
   }
   .sub-heading {
-    font-size: 12px;
+    font-size: 18px;
   }
   .paragraph {
-    font-size: 12px;
+    width: fit-content;
+    background-color: #aa0386;
+    font-size: 20px;
+  }
+  .numberAnimation {
+    /* background-color: crimson; */
+    height: 25vh;
+    margin: 30px;
+    padding: 30px;
+  }
+  .animation {
+    /* background-color: coral; */
+    width: 210vw;
   }
 }
 

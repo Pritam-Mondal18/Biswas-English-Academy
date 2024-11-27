@@ -120,10 +120,19 @@
 @media (max-width: 361px) {
   .about-container {
     height: 130vh;
-    width: 115vw;
+    width: 189vw;
   }
   .about-paragraph {
     height: 100vh;
+    width: fit-content;
+  }
+  .paragraph.about {
+    font-size: 17px;
+  }
+  .about-container .about-img .roadmap {
+    height: 40vh;
+    width: 114vw;
+    margin: 33px 66px 0px 485px;
   }
 }
 @media (max-width: 345px) {
