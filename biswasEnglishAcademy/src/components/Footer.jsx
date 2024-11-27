@@ -6,6 +6,11 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaYoutube } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { GrMap } from "react-icons/gr";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { TfiEmail } from "react-icons/tfi";
+import { FaRegCopyright } from "react-icons/fa";
+
 import "./Footer.css";
 const Footer = () => {
   return (
@@ -59,10 +64,46 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="contact-details">ADDRESS</div>
-        <div className="courses">COURSES</div>
+        <div className="contact-details">
+          ADDRESS
+          <div className="adress-details">
+            <div className="icon-map">
+              <GrMap />
+            </div>
+            <p>
+              80 Laxmipally, Rishra, Hooghly, WB, India, Rishra, India, West
+              Bengal
+            </p>
+          </div>
+          <div className="contact-number-details">
+            <div className="icon-map">
+              <FaPhoneVolume />
+            </div>
+            <p>+91 7439885351</p>
+          </div>
+          <div className="email-details">
+            <div className="icon-map">
+              <TfiEmail />
+            </div>
+            <p>biswasenglishacademy@gmail.com</p>
+          </div>
+        </div>
+        <div className="courses">
+          COURSES
+          <div className="course">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Gallary</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div className="end-footer">footer last part</div>
+      <div className="end-footer">
+        <p>Copyright © 2024 biswasenglishacademy.com</p>
+      </div>
     </>
   );
 };

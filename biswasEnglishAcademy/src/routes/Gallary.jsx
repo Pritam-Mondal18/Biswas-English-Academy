@@ -44,9 +44,7 @@ const images = [
 ];
 
 function Gallary({ gallaryRef }) {
-  const onInit = () => {
-    console.log("lightGallery has been initialized");
-  };
+  const onInit = () => {};
   return (
     <>
       <div ref={gallaryRef} className="gallary-container">

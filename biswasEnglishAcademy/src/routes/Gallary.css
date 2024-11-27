@@ -22,3 +22,13 @@ img.gallary:hover {
   filter: opacity(0.8);
   transform: scale(1.01);
 }
+/* @media (max-width: 361px) {
+  .gallary-container {
+    width: 115vw;
+  }
+}
+@media (max-width: 413px) {
+  .gallary-container {
+    width: 100vw;
+  }
+} */

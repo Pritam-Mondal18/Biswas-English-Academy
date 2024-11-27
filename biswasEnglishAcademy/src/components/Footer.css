@@ -4,7 +4,8 @@
   padding: 50px;
   color: #fff; /* White text */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  /* justify-content: space-between; */
   align-items: center;
 }
 .social-links-container,
@@ -73,8 +74,63 @@
   font-size: 20px;
 }
 
+.adress-details,
+.contact-number-details,
+.email-details {
+  display: flex;
+  height: 58vh;
+  width: 30vw;
+  /* background-color: brown; */
+}
+
+.adress-details .icon-map,
+.contact-number-details .icon-map,
+.email-details .icon-map {
+  padding: 25px 10px;
+  font-size: 30px;
+}
+.adress-details .icon-map:hover,
+.contact-number-details .icon-map:hover,
+.email-details .icon-map:hover {
+  cursor: pointer;
+  color: pink;
+}
+.email-details p {
+  padding-right: 40px;
+}
+.adress-details p,
+.contact-number-details p,
+.email-details p {
+  padding-left: 25px;
+  padding-top: 25px;
+  font-size: 18px;
+}
+.adress-details,
+.contact-number-details {
+  display: flex;
+}
+.email-details {
+  display: flex;
+  justify-content: space-between;
+}
+/*courses section */
+.course ul li {
+  padding-top: 25px;
+  height: 10vh;
+  justify-content: space-around;
+  list-style: none;
+}
+.course ul li:hover {
+  cursor: pointer;
+  color: pink;
+}
+
 .end-footer {
-  background-color: brown;
+  background-color: #1d263d;
+  display: flex;
+  padding: 20px;
+  /* background-color: brown; */
   height: 10vh;
   width: 100vw;
+  color: burlywood;
 }
