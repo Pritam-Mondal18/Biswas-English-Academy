@@ -134,3 +134,69 @@
   width: 100vw;
   color: burlywood;
 }
+/* responsive */
+@media (max-width: 821px) {
+  .footer-container {
+    width: 154vw;
+  }
+}
+@media (max-width: 391px) {
+  .footer-container {
+    padding: 80px 0;
+    height: 230vh;
+    width: 254vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit), minmax(300px, 1fr);
+    gap: 15px;
+    justify-content: center;
+  }
+  .social-links-container .logo {
+    padding: 8px;
+    height: 130px;
+    width: 140px;
+    margin-left: 44px;
+    margin-top: -86px;
+  }
+  .social-links-container {
+    width: 270px;
+  }
+  h4 i {
+    font-size: 21px;
+  }
+  .social-links-container p,
+  .adress-details p,
+  .contact-number-details p {
+    /* background-color: #1877f2; */
+    width: 300px;
+    font-size: 25px;
+  }
+  .adress-details,
+  .contact-number-details,
+  .email-details {
+    /* background-color: brown; */
+    width: 128vw;
+  }
+  .email-details p {
+    font-size: 25px;
+  }
+  .courses h4 i,
+  .contact-details h4 i {
+    font-size: 50px;
+  }
+  .course ul li {
+    font-size: 40px;
+  }
+  .end-footer {
+    padding-bottom: 500px;
+    width: 254vw;
+    font-size: 25px;
+  }
+}
+@media (max-width: 321px) {
+  .footer-container {
+    width: 270vw;
+  }
+  .end-footer {
+    width: 270vw;
+  }
+}

@@ -127,12 +127,12 @@
     width: 415px;
   }
 }
-@media (max-width: 376px) {
+/* @media (max-width: 376px) {
   .navbar {
     width: 115vw;
   }
-}
-@media (max-width: 361px) {
+} */
+@media (max-width: 391px) {
   .navbar {
     width: -webkit-fill-available;
     background-color: cadetblue;
@@ -141,7 +141,6 @@
 
 @media (max-width: 321px) {
   .navbar {
-    width: 370px;
     height: 94px;
   }
 }

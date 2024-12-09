@@ -25,8 +25,20 @@ img.gallary:hover {
 .lg-react-element {
   padding: 10px;
 }
-@media (max-width: 361px) {
+@media (max-width: 821px) {
   .gallary-container {
-    width: 189vw;
+    width: 154vw;
+  }
+}
+
+@media (max-width: 391px) {
+  .gallary-container {
+    width: 254vw;
+  }
+}
+@media (max-width: 321px) {
+  .gallary-container {
+    /* background-color: aqua; */
+    width: 270vw;
   }
 }

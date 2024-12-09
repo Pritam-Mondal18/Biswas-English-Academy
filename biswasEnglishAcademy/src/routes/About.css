@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: column-reverse;
     height: 100vh;
-    width: 106.6vw;
+    width: 154vw;
   }
   .about-container .about-img .roadmap {
     height: 40vh;
@@ -107,7 +107,7 @@
     width: 120vw;
   }
 }
-@media (max-width: 376px) {
+/* @media (max-width: 376px) {
   .about-container {
     height: 123vh;
     width: 115vw;
@@ -115,12 +115,12 @@
   .about-container .about-img .roadmap {
     margin: 32px 267px 0px 485px;
   }
-}
+} */
 
-@media (max-width: 361px) {
+@media (max-width: 391px) {
   .about-container {
     height: 130vh;
-    width: 189vw;
+    width: 254vw;
   }
   .about-paragraph {
     height: 100vh;
@@ -149,10 +149,15 @@
 }
 @media (max-width: 321px) {
   .about-container {
-    height: 175vh;
-    width: 115vw;
+    height: 190vh;
+    width: 267vw;
   }
   .about-container .about-img .roadmap {
     margin: 0px 267px 266px 485px;
+  }
+}
+@media (max-width: 321) {
+  .about-container {
+    width: 270vw;
   }
 }

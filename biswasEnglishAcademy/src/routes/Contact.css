@@ -146,9 +146,14 @@ form button {
   cursor: pointer;
 }
 /* responsive*/
-@media (max-width: 361px) {
+@media (max-width: 891px) {
   .contact-container {
-    width: 189vw;
+    width: 154vw;
+  }
+}
+@media (max-width: 391px) {
+  .contact-container {
+    width: 254vw;
     height: 460vh;
   }
   .contact {
@@ -212,5 +217,10 @@ form button {
     /* height: 70px; */
     width: 151vw;
     border-radius: 10px;
+  }
+}
+@media (max-width: 321px) {
+  .contact-container {
+    width: 267vw;
   }
 }

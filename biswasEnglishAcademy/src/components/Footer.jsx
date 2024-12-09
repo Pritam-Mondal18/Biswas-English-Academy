@@ -28,9 +28,11 @@ const Footer = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
       <div className="footer-container">
         <div className="social-links-container">
           <img src="/images/logoFinal.png" alt="Logo" className="logo" />
-          <b>
-            <i>Biswas English Academy</i>
-          </b>
+          <h4>
+            <b>
+              <i>Biswas English Academy</i>
+            </b>
+          </h4>
           <p>
             Welcome to <i>Biswas English Academy</i> where excellence in English
             education meets to decades of unwavering dedication.
@@ -75,7 +77,10 @@ const Footer = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
           </div>
         </div>
         <div className="contact-details">
-          ADDRESS
+          <h4>
+            <i>ADDRESS</i>
+          </h4>
+
           <div className="adress-details">
             <div className="icon-map">
               <GrMap />
@@ -99,7 +104,9 @@ const Footer = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
           </div>
         </div>
         <div className="courses">
-          COURSES
+          <h4>
+            <i>COURSES</i>
+          </h4>
           <div className="course">
             <ul className={showMenu ? "menu-open" : "menu-closed"}>
               <li>

@@ -36,7 +36,7 @@ const App = () => {
       <Home homeRef={homeRef} />
       {/* <Arrow /> */}
       <About aboutRef={aboutRef} />
-      {/* <Services servicesRef={servicesRef} /> */}
+      <Services servicesRef={servicesRef} />
       <Gallary gallaryRef={gallaryRef} />
       <Contact contactRef={contactRef} />
       <Footer />

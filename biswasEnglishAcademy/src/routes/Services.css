@@ -2,6 +2,37 @@
   padding-top: 90px;
   width: 100vw;
   min-height: 100vh;
-  background: coral;
+  background: #ced8ff;
   transition: 0.5s;
+}
+.sub-heading-servicePage {
+  padding: 10px;
+  text-decoration: 2px underline wavy black;
+}
+.service-box-container {
+  margin: 5px 5px 0 5px;
+  display: grid;
+  /* border: 1px solid red; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  /* background-color: blueviolet; */
+}
+.service-box {
+  border: 5px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
+  background-color: rgb(31, 198, 148);
+}
+.service-box:hover {
+  cursor: pointer;
+  background-color: rgb(92, 224, 184);
+}
+.service-box-container .service-box .box-container {
+  /* background-color: red; */
+  text-align: center;
+  /* gap: 5px; */
+}
+.service-box-container .service-box .box-container ul li {
+  list-style: none;
 }
