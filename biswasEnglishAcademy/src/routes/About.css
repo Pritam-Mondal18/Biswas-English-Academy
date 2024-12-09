@@ -18,12 +18,10 @@
   justify-content: center;
   align-items: center;
   margin: 20px;
-  /* background-color: blueviolet; */
   height: 80vh;
   width: 38vw;
 }
 .about-container .about-img .roadmap {
-  /* padding: 20px; */
   height: 80vh;
   width: 40vw;
 }
@@ -31,19 +29,20 @@
   font-size: 20px;
 }
 
-/* Mobile Responsive Styling */
+/* Mobile Responsive Styling  */
 @media (max-width: 1025px) {
   .about-container {
     height: 100vh;
     display: flex;
   }
+
   .about-container .about-img .roadmap {
     margin-top: -30px;
     height: 70vh;
     width: 40vw;
   }
   .paragraph.about {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 @media (max-width: 821px) {
@@ -56,71 +55,58 @@
   .about-container .about-img .roadmap {
     height: 40vh;
     width: 80vw;
-    margin: 0px 0px 98px 485px;
+    margin: 0px 0px 98px 730px;
   }
   .about-paragraph {
-    width: 100vw;
+    width: 146vw;
     height: 50vh;
     display: flex;
+    margin-left: 30px;
   }
   .paragraph.about {
-    font-size: 18px;
+    font-size: 23px;
+  }
+  @media (max-width: 541px) {
+    .about-container {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 100vh;
+      width: 106.6vw;
+    }
+    .about-container .about-img .roadmap {
+      height: 40vh;
+      width: 80vw;
+      margin: 0 252px 20px 485px;
+    }
+    .about-paragraph {
+      width: 100vw;
+      display: flex;
+    }
+    .paragraph.about {
+      font-size: 12px;
+    }
   }
 }
 @media (max-width: 431px) {
   .about-container {
-    width: 120vw;
+    width: 208vw;
   }
   .about-paragraph {
     width: 100vw;
     display: flex;
   }
   .paragraph.about {
+    background-color: red;
+    width: 127vw;
     font-size: 12px;
   }
   .about-container .about-img .roadmap {
     margin: 0 190px 98px 485px;
   }
 }
-@media (max-width: 541px) {
+@media (max-width: 415px) {
   .about-container {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 100vh;
-    width: 106.6vw;
-  }
-  .about-container .about-img .roadmap {
-    height: 40vh;
-    width: 80vw;
-    margin: 0 252px 20px 485px;
-  }
-  .about-paragraph {
-    width: 100vw;
-    display: flex;
-  }
-  .paragraph.about {
-    font-size: 12px;
-  }
-}
-@media (max-width: 431px) {
-  .about-container {
-    width: 120vw;
-  }
-}
-/* @media (max-width: 376px) {
-  .about-container {
-    height: 123vh;
-    width: 115vw;
-  }
-  .about-container .about-img .roadmap {
-    margin: 32px 267px 0px 485px;
-  }
-} */
-
-@media (max-width: 391px) {
-  .about-container {
-    height: 130vh;
-    width: 254vw;
+    width: 211vw;
   }
   .about-paragraph {
     height: 100vh;
@@ -128,7 +114,32 @@
   }
   .paragraph.about {
     font-size: 17px;
+    width: 173vw;
+    height: 32vh;
   }
+}
+@media (max-width: 376px) {
+  .about-container {
+    height: 123vh;
+    width: 115vw;
+  }
+  .about-container .about-img .roadmap {
+    margin: 32px 267px 0px 485px;
+  }
+}
+
+@media (max-width: 391px) {
+  .about-container {
+    height: 130vh;
+    width: 254vw;
+  }
+  /* .about-paragraph {
+    height: 100vh;
+    width: fit-content;
+  } */
+  /* .paragraph.about {
+    font-size: 17px;
+  } */
   .about-container .about-img .roadmap {
     height: 40vh;
     width: 114vw;

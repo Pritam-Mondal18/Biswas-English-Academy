@@ -30,7 +30,16 @@ img.gallary:hover {
     width: 154vw;
   }
 }
-
+@media (max-width: 431px) {
+  .gallary-container {
+    width: 208vw;
+  }
+}
+@media (max-width: 415px) {
+  .gallary-container {
+    width: 211vw;
+  }
+}
 @media (max-width: 391px) {
   .gallary-container {
     width: 254vw;

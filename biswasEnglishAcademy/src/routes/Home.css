@@ -10,7 +10,6 @@
   background: #ced8ff;
   transition: 0.5s;
 }
-
 .home-heading p {
   margin: 10px;
 }
@@ -103,8 +102,7 @@
     flex-direction: column;
   }
   .paragraph {
-    width: 90vw;
-    font-size: 18px;
+    width: 147vw;
   }
   .scrollNumber,
   .numberAnimation .animationText h2 {
@@ -129,7 +127,7 @@
   }
   .animation {
     margin: -77px;
-    padding: 50px;
+    padding-left: 240px;
     height: 300px;
     width: 35vw;
   }
@@ -146,7 +144,12 @@
     padding: 30px;
   }
 }
-
+@media (max-width: 713px) {
+  .home-container {
+    /* background-color: #aa0386; */
+    text-align: center;
+  }
+}
 @media (max-width: 541px) {
   .home-container {
     width: 106vw;
@@ -173,13 +176,13 @@
 
 @media (max-width: 431px) {
   .home-container {
-    width: 120vw;
+    width: 208vw;
   }
   .home-heading p {
     font-size: 18px;
   }
   .paragraph {
-    font-size: 10px;
+    font-size: 16px;
   }
   .scrollNumber,
   .numberAnimation .animationText h2 {
@@ -196,13 +199,18 @@
 }
 @media (max-width: 415px) {
   .home-container {
-    width: 120vw;
+    width: 211vw;
   }
   .home-heading p {
-    font-size: 8px;
+    font-size: 15px;
   }
   .paragraph {
-    font-size: 10px;
+    /* background-color: #aa0386; */
+    width: 180vw;
+    font-size: 18px;
+  }
+  .about-container .about-img .roadmap {
+    margin: 0 190px 98px 793px;
   }
 }
 @media (max-width: 391px) {

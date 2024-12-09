@@ -138,6 +138,20 @@
 @media (max-width: 821px) {
   .footer-container {
     width: 154vw;
+    /* margin-bottom: 870px; */
+    justify-content: space-between;
+  }
+  .end-footer {
+    width: 154vw;
+    margin-top: -58px;
+  }
+}
+@media (max-width: 431px) {
+  .footer-container {
+    width: 208vw;
+  }
+  .end-footer {
+    width: 208vw;
   }
 }
 @media (max-width: 391px) {
@@ -194,9 +208,10 @@
 }
 @media (max-width: 321px) {
   .footer-container {
-    width: 270vw;
+    /* background-color: #ff0000; */
+    width: 271vw;
   }
   .end-footer {
-    width: 270vw;
+    width: 271vw;
   }
 }
