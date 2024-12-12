@@ -6,7 +6,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaMoon } from "react-icons/fa";
 
-const Header = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
+const Header = ({
+  homeRef,
+  aboutRef,
+  contactRef,
+  gallaryRef,
+  reviewRef,
+  servicesRef,
+}) => {
   const [showMenu, setShowMenu] = useState(false);
 
   // Toggle menu visibility
@@ -87,6 +94,16 @@ const Header = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
               Gallery
             </ScrollLink>
           </li>
+          <ScrollLink
+            onClick={() => {
+              scrollToElement(reviewRef);
+              setShowMenu(false);
+            }}
+            smooth={true}
+            duration={500}
+          >
+            Review
+          </ScrollLink>
           <li>
             <ScrollLink
               onClick={() => {

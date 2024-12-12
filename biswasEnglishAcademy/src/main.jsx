@@ -7,6 +7,7 @@ import "./index.css";
 import About from "./routes/About.jsx";
 import Contact from "./routes/Contact.jsx";
 import Gallary from "./routes/Gallary.jsx";
+import Review from "./routes/Review.jsx";
 import Services from "./routes/Services.jsx";
 
 // import "bootstrap/dist/css/bootstrap.css";
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/gallary",
         element: <Gallary />,
+      },
+      {
+        path: "/review",
+        element: <Review />,
       },
       {
         path: "/services",

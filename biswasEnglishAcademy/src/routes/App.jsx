@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import Gallary from "./Gallary";
 import Services from "./Services";
 import Footer from "../components/Footer";
+import Review from "./Review";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -16,6 +17,7 @@ const App = () => {
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const gallaryRef = useRef(null);
+  const reviewRef = useRef(null);
   const servicesRef = useRef(null);
 
   return (
@@ -27,6 +29,7 @@ const App = () => {
           servicesRef={servicesRef}
           gallaryRef={gallaryRef}
           contactRef={contactRef}
+          reviewRef={reviewRef}
           theme={theme}
           setTheme={setTheme}
         />
@@ -34,10 +37,10 @@ const App = () => {
       </div>
       {/* <Header ref={homeRef} /> */}
       <Home homeRef={homeRef} />
-      {/* <Arrow /> */}
       <About aboutRef={aboutRef} />
       <Services servicesRef={servicesRef} />
       <Gallary gallaryRef={gallaryRef} />
+      <Review reviewRef={reviewRef} />
       <Contact contactRef={contactRef} />
       <Footer />
     </>

@@ -94,7 +94,7 @@ const Footer = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
             <div className="icon-map">
               <FaPhoneVolume />
             </div>
-            <p>+91 7439885351</p>
+            <p>+91 7059904029</p>
           </div>
           <div className="email-details">
             <div className="icon-map">
@@ -105,70 +105,16 @@ const Footer = ({ homeRef, aboutRef, contactRef, gallaryRef, servicesRef }) => {
         </div>
         <div className="courses">
           <h4>
-            <i>COURSES</i>
+            <i>SERVICES</i>
           </h4>
           <div className="course">
-            <ul className={showMenu ? "menu-open" : "menu-closed"}>
-              <li>
-                <ScrollLink
-                  onClick={() => {
-                    scrollToElement(homeRef);
-                    setShowMenu(false);
-                  }}
-                  smooth={true}
-                  duration={500}
-                >
-                  Home
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  onClick={() => {
-                    scrollToElement(aboutRef);
-                    setShowMenu(false);
-                  }}
-                  smooth={true}
-                  duration={500}
-                >
-                  About
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  onClick={() => {
-                    scrollToElement(servicesRef);
-                    setShowMenu(false);
-                  }}
-                  smooth={true}
-                  duration={500}
-                >
-                  Services
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  onClick={() => {
-                    scrollToElement(gallaryRef);
-                    setShowMenu(false);
-                  }}
-                  smooth={true}
-                  duration={500}
-                >
-                  Gallery
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  onClick={() => {
-                    scrollToElement(contactRef);
-                    setShowMenu(false);
-                  }}
-                  smooth={true}
-                  duration={500}
-                >
-                  Contact
-                </ScrollLink>
-              </li>
+            <ul>
+              <li>Spoken English Classes for Seniors & Juniors</li>
+              <li>CBSE Board (class-5 to class-12)</li>
+              <li>ICSE Board (class-5 to class-10)</li>
+              <li>ISC Board (class-11 to class-12)</li>
+              <li>WBBSE Board (class-5 to class-10)</li>
+              <li>WBCHSE Board (class-11 to class-12)</li>
             </ul>
           </div>
         </div>
