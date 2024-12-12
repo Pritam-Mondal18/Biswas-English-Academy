@@ -1,15 +1,68 @@
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef, useState, useEffect } from "react";
+import Model from "react-modal";
 import "./Home.css";
 import { FaBusinessTime } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 import { PiStudentFill } from "react-icons/pi";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
 function Home({ homeRef }) {
   const [counterStart, setcounterStart] = useState(false);
+  //handle form section
+  const [formVisible, setformVisible] = useState(true);
+
   return (
     <>
       <div ref={homeRef} className="home-container">
+        {/* Start form section */}
+        {/* Modal for the first-time form */}
+        <Model
+          isOpen={formVisible}
+          style={{
+            content: {
+              margin: "100px",
+              width: "50vw",
+              height: "70vh",
+              backgroundColor: "#ced8ff",
+              alignContent: "center",
+              cursor: "pointer",
+              zIndex: "1",
+            },
+          }}
+        >
+          <div className="contact-from-info">
+            <IoMdClose
+              className="closeForm"
+              onClick={() => setformVisible(false)}
+            />
+            <h2>Get In Touch</h2>
+            <form type="submit">
+              <label>
+                <input type="text" placeholder="Your Name" required />
+              </label>
+              <label>
+                <input type="email" placeholder="Email Address" required />
+              </label>
+              <label>
+                <input type="adress" placeholder="Address" />
+              </label>
+              <label>
+                <input
+                  type="tel"
+                  placeholder="Contact Number"
+                  pattern="[0-9]{10}" // Adjust as needed for validation
+                  required
+                />
+              </label>
+              <label>
+                <textarea name="message" placeholder="Message" required />
+              </label>
+              <button>Submit</button>
+            </form>
+          </div>
+        </Model>
+        {/* End form section */}
         {/* attached banner */}
         <div className="banner">
           {" "}

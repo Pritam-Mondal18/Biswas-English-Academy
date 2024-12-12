@@ -94,16 +94,18 @@ const Header = ({
               Gallery
             </ScrollLink>
           </li>
-          <ScrollLink
-            onClick={() => {
-              scrollToElement(reviewRef);
-              setShowMenu(false);
-            }}
-            smooth={true}
-            duration={500}
-          >
-            Review
-          </ScrollLink>
+          <li>
+            <ScrollLink
+              onClick={() => {
+                scrollToElement(reviewRef);
+                setShowMenu(false);
+              }}
+              smooth={true}
+              duration={500}
+            >
+              Review
+            </ScrollLink>
+          </li>
           <li>
             <ScrollLink
               onClick={() => {
