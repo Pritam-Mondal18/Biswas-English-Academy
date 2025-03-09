@@ -1,5 +1,6 @@
-import React, { forwardRef } from "react";
+import React, { useRef, forwardRef } from "react";
 import "./Contact.css";
+import emailjs from "@emailjs/browser";
 import { FaHome } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
@@ -7,8 +8,32 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
+
 function Contact({ contactRef }) {
   const googleMapsUrl = "https://maps.app.goo.gl/EHPM36NnWUgL2mF79";
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_Default_Template,
+        form.current,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          alert("SUCCESS!");
+        },
+        (error) => {
+          alert("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <>
       <div ref={contactRef} className="contact-container">
@@ -106,19 +131,16 @@ function Contact({ contactRef }) {
           </div>
         </div>
         <div className="contact-from">
-          {/* <div className="contact-from-img"> */}
           <img src="/images/man.jpg" alt="" className="man-img" />
-          {/* </div> */}
+
           <div className="contact-from-info">
             <h2>Get In Touch</h2>
-            <form type="submit">
+            <form ref={form} onSubmit={sendEmail}>
               <label>
                 <input
                   type="text"
                   placeholder="Your Name"
-                  // name="name"
-                  // value={formData.name}
-                  // onChange={handleChange}
+                  name="name"
                   required
                 />
               </label>
@@ -126,44 +148,29 @@ function Contact({ contactRef }) {
                 <input
                   type="email"
                   placeholder="Email Address"
-                  // name="name"
-                  // value={formData.name}
-                  // onChange={handleChange}
+                  name="email"
                   required
                 />
               </label>
               <label>
-                <input
-                  type="adress"
-                  placeholder="Address"
-                  // name="name"
-                  // value={formData.name}
-                  // onChange={handleChange}
-                />
+                <input type="adress" placeholder="Address" name="address" />
               </label>
               <label>
                 <input
                   type="tel"
                   placeholder="Contact Number"
-                  // name="contactNumber"
-                  // value={formData.contactNumber}
-                  // onChange={handleChange}
+                  name="contactnumber"
                   pattern="[0-9]{10}" // Adjust as needed for validation
                   required
                 />
               </label>
               <label>
-                <textarea
-                  name="message"
-                  placeholder="Message"
-                  // value={formData.message}
-                  // onChange={handleChange}
-                  // rows="5"
-                  required
-                />
+                <textarea name="message" placeholder="Message" required />
               </label>
-              <button>Submit</button>
-            </form>
+              <button type="submit" value="send">
+                Submit
+              </button>
+            </form>{" "}
           </div>
         </div>
       </div>

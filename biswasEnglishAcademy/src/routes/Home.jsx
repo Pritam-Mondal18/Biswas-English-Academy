@@ -1,4 +1,4 @@
-import React, { forwardRef, useState, useEffect } from "react";
+import React, { forwardRef, useState, useRef, useEffect } from "react";
 import Model from "react-modal";
 import "./Home.css";
 import { FaBusinessTime } from "react-icons/fa";
@@ -11,6 +11,29 @@ function Home({ homeRef }) {
   const [counterStart, setcounterStart] = useState(false);
   //handle form section
   const [formVisible, setformVisible] = useState(true);
+
+  //handle form section using emailJS
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_Default_Template,
+        form.current,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          alert("Email has sent Succesfully!");
+        },
+        (error) => {
+          alert("FAILED...", error.text);
+        }
+      );
+  };
 
   return (
     <>
@@ -37,20 +60,31 @@ function Home({ homeRef }) {
               onClick={() => setformVisible(false)}
             />
             <h2>Get In Touch</h2>
-            <form type="submit">
+            <form ref={form} onSubmit={sendEmail}>
               <label>
-                <input type="text" placeholder="Your Name" required />
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  name="name"
+                  required
+                />
               </label>
               <label>
-                <input type="email" placeholder="Email Address" required />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  name="email"
+                  required
+                />
               </label>
               <label>
-                <input type="adress" placeholder="Address" />
+                <input type="adress" placeholder="Address" name="address" />
               </label>
               <label>
                 <input
                   type="tel"
                   placeholder="Contact Number"
+                  name="contactnumber"
                   pattern="[0-9]{10}" // Adjust as needed for validation
                   required
                 />
@@ -58,7 +92,9 @@ function Home({ homeRef }) {
               <label>
                 <textarea name="message" placeholder="Message" required />
               </label>
-              <button>Submit</button>
+              <button type="submit" value="send">
+                Submit
+              </button>
             </form>
           </div>
         </Model>

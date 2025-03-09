@@ -63,7 +63,9 @@
   padding: 20px 0;
   gap: 40px;
 }
-
+.toggle-icon.login {
+  font-size: 25px;
+}
 .toggle-icon {
   text-align: end;
   font-size: 20px;
