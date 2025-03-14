@@ -1,10 +1,10 @@
-/* for form section
+/* /* for form section
 .closeForm {
   color: black;
   font-size: 30px;
   margin-left: 550px;
 }
-/*Form section end*/
+Form section end
 
 .banner-img {
   margin: 0;
@@ -67,7 +67,7 @@
   font-size: 40px;
 }
 
-/* Mobile Responsive Styling */
+Mobile Responsive Styling
 .banner-img {
   width: 100%;
 }
@@ -133,7 +133,7 @@
 }
 @media (max-width: 713px) {
   .home-container {
-    /* background-color: #aa0386; */
+    background-color: #aa0386;
     text-align: center;
   }
 }
@@ -192,7 +192,7 @@
     font-size: 15px;
   }
   .paragraph {
-    /* background-color: #aa0386; */
+    background-color: #aa0386;
     width: 180vw;
     font-size: 18px;
   }
@@ -222,13 +222,13 @@
     font-size: 20px;
   }
   .numberAnimation {
-    /* background-color: crimson; */
+    background-color: crimson;
     height: 25vh;
     margin: 30px;
     padding: 30px;
   }
   .animation {
-    /* background-color: coral; */
+    background-color: coral;
     width: 210vw;
   }
 }
@@ -238,5 +238,384 @@
     width: 270vw;
   }
 }
-
+*/
 /* gpt */
+
+/* for form section */
+.closeForm {
+  color: black;
+  font-size: 30px;
+  margin-left: auto;
+  cursor: pointer;
+}
+/* Form section end */
+
+.banner-img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.home-container {
+  padding-top: 94px;
+  width: 100%;
+  min-height: 80vh;
+  background: #ced8ff;
+  transition: 0.5s;
+}
+
+.home-heading p {
+  margin: 10px;
+}
+
+.home-heading .sub-heading {
+  padding-left: 210px;
+}
+
+.paragraph-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraph {
+  margin: 20px;
+  font-size: 20px;
+  max-width: 90%;
+  text-align: justify;
+}
+
+.animation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.numberAnimation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 27px;
+  padding: 10px;
+  height: 50vh;
+  width: 230px;
+}
+
+.animationIcon .icons {
+  color: #aa0386;
+  font-size: 90px;
+}
+
+.animationText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animationText h2 {
+  color: darkblue;
+  font-size: 35px;
+}
+
+.scrollNumber {
+  color: blueviolet;
+  font-size: 40px;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 1025px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    width: 103vw;
+    min-height: 63vh;
+  }
+  .home-heading p {
+    font-size: 20px;
+  }
+  .sub-heading {
+    font-size: 16px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .paragraph-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .paragraph {
+    width: 90%;
+    font-size: 18px;
+  }
+  .scrollNumber,
+  .numberAnimation .animationText h2 {
+    font-size: 30px;
+  }
+  .animationIcon .icons {
+    font-size: 70px;
+  }
+  .numberAnimation {
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+@media (max-width: 883px) {
+  .home-container {
+    width: 154vw;
+  }
+}
+
+@media (max-width: 821px) {
+  .home-container {
+    width: 154vw;
+  }
+  .home-heading p,
+  .paragraph {
+    font-size: 18px;
+  }
+  .animation {
+    margin: 20px 0;
+    padding-left: 0;
+    height: auto;
+    width: 100%;
+  }
+  .scrollNumber,
+  .numberAnimation .animationText h2 {
+    font-size: 25px;
+  }
+  .animationIcon .icons {
+    font-size: 60px;
+  }
+  .numberAnimation {
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .home-container {
+    width: 178vw;
+    text-align: center;
+  }
+}
+@media (max-width: 713px) {
+  .home-container {
+    width: 198vw;
+    text-align: center;
+  }
+}
+@media (max-width: 691px) {
+  .home-container {
+    width: 220vw;
+  }
+}
+@media (max-width: 541px) {
+  .home-container {
+    width: 254vw;
+  }
+  .home-heading p {
+    font-size: 16px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .scrollNumber,
+  .numberAnimation .animationText h2 {
+    font-size: 20px;
+  }
+  .animationIcon .icons {
+    font-size: 50px;
+  }
+  .numberAnimation {
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 431px) {
+  .home-container {
+    width: 254vw;
+  }
+  .home-heading p {
+    font-size: 14px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+  .scrollNumber,
+  .numberAnimation .animationText h2 {
+    font-size: 18px;
+  }
+  .animationIcon .icons {
+    font-size: 40px;
+  }
+  .numberAnimation {
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .home-container {
+    width: 255vw;
+  }
+  .home-heading p {
+    font-size: 14px;
+  }
+  .paragraph {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 391px) {
+  .home-container {
+    width: 254vw;
+  }
+  .home-heading p {
+    font-size: 12px;
+  }
+  .sub-heading {
+    font-size: 12px;
+  }
+  .paragraph {
+    width: 90%;
+    font-size: 12px;
+  }
+  .numberAnimation {
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+  }
+  .animation {
+    width: 100%;
+  }
+}
+
+@media (max-width: 321px) {
+  .home-container {
+    width: 272vw;
+  }
+}
+
+/* Modal styling */
+
+.ReactModal__Content {
+  margin: 100px;
+  width: 50vw;
+  height: 70vh;
+  background-color: #ced8ff;
+  align-content: center;
+  cursor: pointer;
+  z-Index: 1;
+  /* margin: 100px auto;
+  width: 50vw;
+  height: 70vh;
+  background-color: #ced8ff;
+  align-content: center;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 20px; */
+}
+
+.contact-from-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closeForm {
+  align-self: flex-end;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.contact-from-info h2 {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form label input,
+form label textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: darkred;
+}
+
+/* Responsive styling */
+/*
+@media (max-width: 1025px) {
+  .ReactModal__Content {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 821px) {
+  .ReactModal__Content {
+    width: 80vw;
+    height: 50vh;
+  }
+}*/
+
+@media (max-width: 551px) {
+  .ReactModal__Content {
+    width: 100vw;
+    height: 36%
+  }
+  .ReactModal__Content .contact-from-info {
+    align-items: center;
+  }
+}
+
+@media (max-width: 431px) {
+  .ReactModal__Content {
+    width: 100vw;
+    height: 36%;
+  }
+}
+@media (max-width: 361px) {
+  .ReactModal__Content {
+    width: 200vw;
+    height: 36%;
+  }
+  .ReactModal__Content .contact-from-info {
+    padding-left: 193px;
+  }
+}
+/*
+@media (max-width: 321px) {
+  .ReactModal__Content {
+    width: 100vw;
+    height: auto;
+  }
+}

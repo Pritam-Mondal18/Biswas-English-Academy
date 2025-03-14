@@ -14,7 +14,6 @@ dist-ssr
 
 .env
 Backend
-test.jsx
 
 # Editor directories and files
 .vscode/*

@@ -3,6 +3,7 @@ import Model from "react-modal";
 import "./Home.css";
 import { FaBusinessTime } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import { RxCross2 } from "react-icons/rx";
 import { PiStudentFill } from "react-icons/pi";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
@@ -42,23 +43,27 @@ function Home({ homeRef }) {
         {/* Modal for the first-time form */}
         <Model
           isOpen={formVisible}
-          style={{
-            content: {
-              margin: "100px",
-              width: "50vw",
-              height: "70vh",
-              backgroundColor: "#ced8ff",
-              alignContent: "center",
-              cursor: "pointer",
-              zIndex: "1",
-            },
-          }}
+          // style={{
+          //   content: {
+          //     margin: "100px",
+          //     width: "50vw",
+          //     height: "70vh",
+          //     backgroundColor: "#ced8ff",
+          //     alignContent: "center",
+          //     cursor: "pointer",
+          //     zIndex: "1",
+          //   },
+          // }}
         >
+          <RxCross2
+            className="closeForm"
+            onClick={() => setformVisible(false)}
+          />
           <div className="contact-from-info">
-            <IoMdClose
+            {/* <RxCross2
               className="closeForm"
               onClick={() => setformVisible(false)}
-            />
+            /> */}
             <h2>Get In Touch</h2>
             <form ref={form} onSubmit={sendEmail}>
               <label>

@@ -1,13 +1,15 @@
 .footer-container {
   background-color: #101522; /* Dark background */
-  width: 100vw;
+  width: 100%;
   padding: 50px;
   color: #fff; /* White text */
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  /* justify-content: space-between; */
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
+
 .social-links-container,
 .contact-details,
 .courses {
@@ -15,29 +17,34 @@
   flex-direction: column;
   text-align: center;
   padding: 15px;
-  /* background-color: yellowgreen; */
-  height: 60vh;
-  width: 25vw;
+  height: auto;
+  width: 25%;
 }
+
 .social-links-container .logo {
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 5px;
+  width: 100px;
+  height: auto;
 }
+
 .social-links-container b {
   font-size: 25px;
 }
+
 .social-links-container p {
   text-align: start;
   padding: 15px;
   font-size: 18px;
 }
+
 .social-links {
-  height: 15vh;
   display: flex;
-  align-items: last baseline;
-  font-size: 25px;
   justify-content: space-between;
+  font-size: 25px;
 }
+
 .icon a,
 .facebook a,
 .insta a,
@@ -47,28 +54,35 @@
   color: deeppink;
   font-size: 30px;
 }
+
 .icon a:hover {
   color: darkblue;
 }
+
 .icon:hover {
   color: darkblue;
 }
+
 .social-links .facebook .icon:hover {
   cursor: pointer;
   color: #1877f2;
 }
+
 .social-links .whatsapp .icon:hover {
   cursor: pointer;
   color: #25d366;
 }
+
 .social-links .insta .icon:hover {
   cursor: pointer;
   color: rgb(227, 114, 174);
 }
+
 .social-links .youtube .icon:hover {
   cursor: pointer;
   color: #ff0000;
 }
+
 .contact-details,
 .courses {
   font-size: 20px;
@@ -78,9 +92,9 @@
 .contact-number-details,
 .email-details {
   display: flex;
-  height: 58vh;
-  width: 30vw;
-  /* background-color: brown; */
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .adress-details .icon-map,
@@ -89,15 +103,18 @@
   padding: 25px 10px;
   font-size: 30px;
 }
+
 .adress-details .icon-map:hover,
 .contact-number-details .icon-map:hover,
 .email-details .icon-map:hover {
   cursor: pointer;
   color: pink;
 }
+
 .email-details p {
   padding-right: 40px;
 }
+
 .adress-details p,
 .contact-number-details p,
 .email-details p {
@@ -105,21 +122,13 @@
   padding-top: 25px;
   font-size: 18px;
 }
-.adress-details,
-.contact-number-details {
-  display: flex;
-}
-.email-details {
-  display: flex;
-  justify-content: space-between;
-}
-/*courses section */
+
 .course ul li {
   padding-top: 25px;
-  height: 10vh;
   justify-content: space-around;
   list-style: none;
 }
+
 .course ul li:hover {
   cursor: pointer;
   color: pink;
@@ -128,98 +137,150 @@
 .end-footer {
   background-color: #1d263d;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  /* background-color: brown; */
-  height: 10vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   color: burlywood;
+  text-align: center;
 }
-/* responsive */
+
+/* Responsive Styling */
+@media (max-width: 1025px) {
+  .footer-container {
+    width: 103vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .end-footer {
+    width: 103vw;
+  }
+
+  .social-links-container,
+  .contact-details,
+  .courses {
+    width: 90%;
+  }
+
+  .social-links-container .logo {
+    width: 80px;
+  }
+}
+@media (max-width: 883px) {
+  .footer-container {
+    width: 154vw;
+  }
+  .end-footer {
+    width: 154vw;
+  }
+}
+
 @media (max-width: 821px) {
   .footer-container {
     width: 154vw;
-    /* margin-bottom: 870px; */
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
   .end-footer {
     width: 154vw;
-    margin-top: -58px;
+  }
+
+  .social-links-container,
+  .contact-details,
+  .courses {
+    width: 90%;
+  }
+
+  .social-links-container .logo {
+    width: 70px;
   }
 }
+@media (max-width: 713px) {
+  .footer-container {
+    width: 200vw;
+  }
+  .end-footer {
+    width: 200vw;
+  }
+}
+@media (max-width: 769px) {
+  .footer-container {
+    width: 178vw;
+    text-align: center;
+  }
+  .end-footer {
+    width: 178vw;
+  }
+}
+@media (max-width: 691px) {
+  .footer-container {
+    width: 220vw;
+  }
+  .end-footer {
+    width: 220vw;
+  }
+}
+@media (max-width: 541px) {
+  .footer-container {
+    width: 254vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links-container,
+  .contact-details,
+  .courses {
+    width: 100%;
+  }
+
+  .social-links-container .logo {
+    width: 60px;
+  }
+  .end-footer {
+    width: 254vw;
+  }
+}
+
 @media (max-width: 431px) {
   .footer-container {
-    width: 208vw;
+    /* width: 208%; */
+    width: 255vw;
+    height: 211vh;
+    flex-direction: column;
+    align-items: center;
   }
   .end-footer {
-    width: 208vw;
+    width: 255vw;
   }
-}
-@media (max-width: 413px) {
-  .footer-container {
-    width: 211vw;
+  .social-links-container,
+  .contact-details,
+  .courses {
+    width: 100%;
   }
-  .end-footer {
-    width: 211vw;
-  }
-}
-@media (max-width: 391px) {
-  .footer-container {
-    padding: 80px 0;
-    height: 230vh;
-    width: 254vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit), minmax(300px, 1fr);
-    gap: 15px;
-    justify-content: center;
-  }
+
   .social-links-container .logo {
-    padding: 8px;
-    height: 130px;
-    width: 140px;
-    margin-left: 44px;
-    margin-top: -86px;
-  }
-  .social-links-container {
-    width: 270px;
-  }
-  h4 i {
-    font-size: 21px;
-  }
-  .social-links-container p,
-  .adress-details p,
-  .contact-number-details p {
-    /* background-color: #1877f2; */
-    width: 300px;
-    font-size: 25px;
-  }
-  .adress-details,
-  .contact-number-details,
-  .email-details {
-    /* background-color: brown; */
-    width: 128vw;
-  }
-  .email-details p {
-    font-size: 25px;
-  }
-  .courses h4 i,
-  .contact-details h4 i {
-    font-size: 50px;
-  }
-  .course ul li {
-    font-size: 40px;
-  }
-  .end-footer {
-    padding-bottom: 500px;
-    width: 254vw;
-    font-size: 25px;
+    width: 50px;
   }
 }
+
 @media (max-width: 321px) {
   .footer-container {
-    /* background-color: #ff0000; */
-    width: 271vw;
+    width: 272vw;
+    flex-direction: column;
+    align-items: center;
   }
   .end-footer {
-    width: 271vw;
+    width: 272vw;
+  }
+
+  .social-links-container,
+  .contact-details,
+  .courses {
+    width: 100%;
+  }
+
+  .social-links-container .logo {
+    width: 40px;
   }
 }

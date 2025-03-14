@@ -120,8 +120,8 @@ const Header = ({
             </ScrollLink>
           </li>
         </ul>
-        <FaMoon onClick={toggleMode} className="toggle-icon" />
-        <IoPersonCircle className="toggle-icon login" />
+        {/* <FaMoon onClick={toggleMode} className="toggle-icon" />
+        <IoPersonCircle className="toggle-icon login" /> */}
         <span className="menu-icon" onClick={handleMenuToggle}>
           {showMenu ? <IoCloseSharp /> : <GiHamburgerMenu />}
         </span>
