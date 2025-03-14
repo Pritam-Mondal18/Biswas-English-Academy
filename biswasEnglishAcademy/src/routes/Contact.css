@@ -595,23 +595,6 @@ form button {
     height: 80vh;
   }
 }
-@media (max-width: 376px) {
-  .contact-container {
-    width: 255vw;
-  }
-  /* .contact-Map {
-    padding-left: 150px;
-    width: 220vw;
-  } */
-  /* .man-img {
-    height: 800vh;
-  } */
-
-  /* .contact-from-info form {
-    padding-left: 100px;
-    width: 100vw;
-  } */
-}
 @media (max-width: 431px) {
   .contact-container {
     width: 255vw;
@@ -632,10 +615,15 @@ form button {
     width: 255vw;
   }
 }
+@media (max-width: 376px) {
+  .contact-container {
+    width: 255vw;
+  }
+}
 @media (max-width: 361px) {
   .contact-container {
     width: 255vw;
-    height: 310vh;
+    height: 350vh;
   }
   .contact-Map {
     padding-left: 100px;
