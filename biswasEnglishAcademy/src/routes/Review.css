@@ -23,32 +23,31 @@
 }
 
 /* Mobile Responsive Styling */
-@media (max-width: 1025px) {
+/*large Desktop*/
+@media (min-width: 1440px) {
+  .review-container {
+    width: 100vw;
+  }
+}
+/* Small Desktop */
+@media (min-width: 1024px) and (max-width: 1279px) {
   .review-container {
     width: 103vw;
     padding-top: 80px;
   }
 }
-@media (max-width: 883px) {
-  .review-container {
-    width: 154vw;
-  }
-}
-@media (max-width: 821px) {
-  .review-container {
-    width: 154vw;
-    padding-top: 70px;
-  }
-}
-@media (max-width: 769px) {
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
   .review-container {
     width: 178vw;
     text-align: center;
+    padding-top: 70px;
   }
 }
+/*Mobile*/
 @media (max-width: 713px) {
   .review-container {
-    width: 200vw;
+    width: 215vw;
   }
 }
 @media (max-width: 691px) {

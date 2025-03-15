@@ -147,7 +147,17 @@
 }
 
 /* Responsive Styling */
-@media (max-width: 1025px) {
+/*large Desktop*/
+@media (min-width: 1440px) {
+  .footer-container {
+    width: 100vw;
+  }
+  .end-footer {
+    width: 100vw;
+  }
+}
+/* Small Desktop */
+@media (min-width: 1024px) and (max-width: 1279px) {
   .footer-container {
     width: 103vw;
     flex-direction: column;
@@ -167,56 +177,44 @@
     width: 80px;
   }
 }
-@media (max-width: 883px) {
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
   .footer-container {
-    width: 154vw;
-  }
-  .end-footer {
-    width: 154vw;
-  }
-}
-
-@media (max-width: 821px) {
-  .footer-container {
-    width: 154vw;
+    width: 179vw;
     flex-direction: column;
     align-items: center;
   }
-  .end-footer {
-    width: 154vw;
+  .footer-container p {
+    font-size: 30px;
   }
-
+  .end-footer {
+    width: 179vw;
+  }
+  .end-footer p {
+    font-size: 30px;
+  }
   .social-links-container,
   .contact-details,
   .courses {
     width: 90%;
   }
-
   .social-links-container .logo {
     width: 70px;
   }
 }
 @media (max-width: 713px) {
   .footer-container {
-    width: 200vw;
+    width: 215vw;
   }
   .end-footer {
-    width: 200vw;
-  }
-}
-@media (max-width: 769px) {
-  .footer-container {
-    width: 178vw;
-    text-align: center;
-  }
-  .end-footer {
-    width: 178vw;
+    width: 215vw;
   }
 }
 @media (max-width: 691px) {
   .footer-container {
     width: 220vw;
   }
+
   .end-footer {
     width: 220vw;
   }

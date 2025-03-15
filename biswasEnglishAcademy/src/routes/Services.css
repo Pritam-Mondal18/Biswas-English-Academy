@@ -34,31 +34,30 @@
 }
 
 /* Responsive View */
-@media (max-width: 1025px) {
+/*large Desktop*/
+@media (min-width: 1440px) {
+  .services-container {
+    /* background-color: red; */
+    width: 100vw;
+  }
+}
+/* Small Desktop */
+@media (min-width: 1024px) and (max-width: 1279px) {
   .services-container {
     width: 103vw;
   }
 }
-@media (max-width: 883px) {
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
   .services-container {
-    width: 154vw;
-  }
-}
-@media (max-width: 821px) {
-  .services-container {
-    /* background-color: red; */
-    width: 154vw;
-  }
-}
-@media (max-width: 769px) {
-  .services-container {
-    width: 178vw;
+    width: 179vw;
     text-align: center;
   }
 }
+/*Mobile*/
 @media (max-width: 713px) {
   .services-container {
-    width: 200vw;
+    width: 215vw;
   }
 }
 @media (max-width: 691px) {
