@@ -1,13 +1,10 @@
 {
-	"homepage": "https://Pritam-Mondal18.github.io/Biswas-English-Academy",
 	"name": "biswasenglishacademy",
 	"version": "0.0.0",
 	"private": "true",
 	"main": "Backend/Server/server.cjs",
 	"scripts": {
 		"start": "node Backend/Server/server.cjs",
-		"predeploy": "npm run build",
-  	"deploy": "gh-pages -d dist",
 		"dev": "vite",
 		"build": "vite build",
 		"lint": "eslint .",
