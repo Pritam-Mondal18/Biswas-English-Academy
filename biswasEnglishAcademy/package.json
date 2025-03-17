@@ -2,9 +2,8 @@
 	"name": "biswasenglishacademy",
 	"version": "0.0.0",
 	"private": "true",
-	"main": "Backend/Server/server.cjs",
+	"main": "index.js",
 	"scripts": {
-		"start": "node Backend/Server/server.cjs",
 		"dev": "vite",
 		"build": "vite build",
 		"lint": "eslint .",
