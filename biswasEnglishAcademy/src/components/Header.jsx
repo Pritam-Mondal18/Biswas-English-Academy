@@ -4,8 +4,8 @@ import { Link as ScrollLink } from "react-scroll";
 import { NavLink as RouterLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
-import { FaMoon } from "react-icons/fa";
-import { IoPersonCircle } from "react-icons/io5";
+// import { FaMoon } from "react-icons/fa";
+// import { IoPersonCircle } from "react-icons/io5";
 
 const Header = ({
   homeRef,
@@ -43,7 +43,11 @@ const Header = ({
       {/* Navbar */}
       <div className="navbar">
         <RouterLink to="/">
-          <img src="/images/Final-logo.jpg" alt="Logo" className="logo" />
+          <img
+            src="/Biswas-English-Academy/images/Final-logo.jpg"
+            alt="Logo"
+            className="logo"
+          />
         </RouterLink>
         <h3 className="heading">Biswas English Academy</h3>
         <ul className={`menu-items ${showMenu ? "menu-mobile" : "menu-web"}`}>

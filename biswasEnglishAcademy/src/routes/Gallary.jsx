@@ -32,15 +32,6 @@ const images = [
   { src: "/images/4.jpg", alt: "4" },
   { src: "/images/5.jpg", alt: "5" },
   { src: "/images/6.jpg", alt: "6" },
-  { src: "/images/1.jpg", alt: "1" },
-  { src: "/images/2.jpg", alt: "2" },
-  { src: "/images/3.jpg", alt: "3" },
-  { src: "/images/4.jpg", alt: "4" },
-  { src: "/images/5.jpg", alt: "5" },
-  { src: "/images/6.jpg", alt: "6" },
-  { src: "/images/1.jpg", alt: "1" },
-  { src: "/images/2.jpg", alt: "2" },
-  { src: "/images/3.jpg", alt: "3" },
 ];
 
 function Gallary({ gallaryRef }) {

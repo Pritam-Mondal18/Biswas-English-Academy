@@ -14,35 +14,43 @@ import Services from "./routes/Services.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Biswas-English-Academy",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <Contact />,
       },
       {
-        path: "/gallary",
+        path: "gallary",
         element: <Gallary />,
       },
       {
-        path: "/review",
+        path: "review",
         element: <Review />,
       },
       {
-        path: "/services",
+        path: "services",
         element: <Services />,
       },
     ],
   },
+  // {
+  //   path: "/Biswas-English-Academy",
+  //   element: <App />,
+  // },
+  // {
+  //   path: "*",
+  //   element: <NotFoundPage />,
+  // },
 ]);
 
 createRoot(document.getElementById("root")).render(
