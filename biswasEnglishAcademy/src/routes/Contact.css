@@ -347,19 +347,22 @@ form button {
 }
 
 .contact {
+  /* background-color: cadetblue; */
   margin: 10px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
 }
 
 .contact-Social {
+  /* background-color: #25d366; */
   padding: 5px;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   border-radius: 15px;
+  margin: 10px;
 }
 
 .detailes {
@@ -426,16 +429,22 @@ form button {
 }
 
 .contact-Map {
+  /* background-color: blue; */
   padding: 5px;
+  margin: 10px;
   align-items: center;
   border-radius: 15px;
+  height: 90vh;
+  width: 50%;
 }
 
-.contact-Map iframe {
+/* .contact-Map iframe {
+  display: none;
+  background-color: #ff0000;
   height: 50vh;
-  width: 100%;
+  width: 90%;
   border-radius: 15px;
-}
+} */
 
 .contact-from {
   display: flex;
@@ -497,14 +506,15 @@ form button {
 @media (min-width: 1440px) {
   .contact-container {
     width: 100vw;
-    height: 300vh;
+    height: 215vh;
   }
   .man-img {
     height: 90vh;
   }
   .contact-Map iframe {
-    width: 90vw;
-    height: 80vh;
+    width: 100vh;
+    height: 85vh;
+    border-radius: 10px;
   }
   .contact-from-info form {
     padding-left: 25px;
