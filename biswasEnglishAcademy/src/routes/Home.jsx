@@ -107,7 +107,11 @@ function Home({ homeRef }) {
         {/* attached banner */}
         <div className="banner">
           {" "}
-          <img src="/images/banner.jpg" alt="" className="banner-img" />
+          <img
+            src="/Biswas-English-Academy/images/banner.jpg"
+            alt=""
+            className="banner-img"
+          />
         </div>
         {/* give a heading */}
         <div className="home-heading">

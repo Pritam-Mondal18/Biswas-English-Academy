@@ -20,18 +20,12 @@ import lgShare from "lightgallery/plugins/share";
 import lgRotate from "lightgallery/plugins/rotate";
 
 const images = [
-  { src: "/images/1.jpg", alt: "1" },
-  { src: "/images/2.jpg", alt: "2" },
-  { src: "/images/3.jpg", alt: "3" },
-  { src: "/images/4.jpg", alt: "4" },
-  { src: "/images/5.jpg", alt: "5" },
-  { src: "/images/6.jpg", alt: "6" },
-  { src: "/images/1.jpg", alt: "1" },
-  { src: "/images/2.jpg", alt: "2" },
-  { src: "/images/3.jpg", alt: "3" },
-  { src: "/images/4.jpg", alt: "4" },
-  { src: "/images/5.jpg", alt: "5" },
-  { src: "/images/6.jpg", alt: "6" },
+  { src: "/Biswas-English-Academy/images/1.jpg", alt: "1" },
+  { src: "/Biswas-English-Academy/images/2.jpg", alt: "2" },
+  { src: "/Biswas-English-Academy/images/3.jpg", alt: "3" },
+  { src: "/Biswas-English-Academy/images/4.jpg", alt: "4" },
+  { src: "/Biswas-English-Academy/images/5.jpg", alt: "5" },
+  { src: "/Biswas-English-Academy/images/6.jpg", alt: "6" },
 ];
 
 function Gallary({ gallaryRef }) {

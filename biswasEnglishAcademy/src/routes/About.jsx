@@ -5,7 +5,11 @@ function About({ aboutRef }) {
     <>
       <div ref={aboutRef} className="about-container">
         <div className="about-img">
-          <img src="/images/roadmap.jpg" alt="" className="roadmap" />
+          <img
+            src="/Biswas-English-Academy/images/roadmap.jpg"
+            alt=""
+            className="roadmap"
+          />
         </div>
         <div className="about-paragraph">
           <span className="paragraph about">

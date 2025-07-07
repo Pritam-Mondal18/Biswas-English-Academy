@@ -131,7 +131,11 @@ function Contact({ contactRef }) {
           </div>
         </div>
         <div className="contact-from">
-          <img src="/images/man.jpg" alt="" className="man-img" />
+          <img
+            src="/Biswas-English-Academy/images/man.jpg"
+            alt=""
+            className="man-img"
+          />
 
           <div className="contact-from-info">
             <h2>Get In Touch</h2>
