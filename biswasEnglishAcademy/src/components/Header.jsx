@@ -5,7 +5,7 @@ import { NavLink as RouterLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 // import { FaMoon } from "react-icons/fa";
-// import { IoPersonCircle } from "react-icons/io5";
+import { IoPersonCircle } from "react-icons/io5";
 
 const Header = ({
   homeRef,
@@ -124,8 +124,8 @@ const Header = ({
             </ScrollLink>
           </li>
         </ul>
-        {/* <FaMoon onClick={toggleMode} className="toggle-icon" />
-        <IoPersonCircle className="toggle-icon login" /> */}
+        {/* <FaMoon onClick={toggleMode} className="toggle-icon" />*/}
+        <IoPersonCircle className="toggle-icon login" />
         <span className="menu-icon" onClick={handleMenuToggle}>
           {showMenu ? <IoCloseSharp /> : <GiHamburgerMenu />}
         </span>
