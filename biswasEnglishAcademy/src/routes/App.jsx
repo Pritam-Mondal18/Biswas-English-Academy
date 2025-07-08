@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
-import Gallary from "./Gallary";
+// import Gallary from "./Gallary";
 import Services from "./Services";
 import Footer from "../components/Footer";
 import Review from "./Review";
@@ -16,7 +16,7 @@ const App = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
-  const gallaryRef = useRef(null);
+  // const gallaryRef = useRef(null);
   const reviewRef = useRef(null);
   const servicesRef = useRef(null);
 
@@ -27,7 +27,7 @@ const App = () => {
           homeRef={homeRef}
           aboutRef={aboutRef}
           servicesRef={servicesRef}
-          gallaryRef={gallaryRef}
+          // gallaryRef={gallaryRef}
           contactRef={contactRef}
           reviewRef={reviewRef}
           theme={theme}
@@ -39,7 +39,7 @@ const App = () => {
       <Home homeRef={homeRef} />
       <About aboutRef={aboutRef} />
       <Services servicesRef={servicesRef} />
-      <Gallary gallaryRef={gallaryRef} />
+      {/* <Gallary gallaryRef={gallaryRef} /> */}
       <Review reviewRef={reviewRef} />
       <Contact contactRef={contactRef} />
       <Footer />

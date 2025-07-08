@@ -6,7 +6,7 @@ import Home from "./routes/Home.jsx";
 import "./index.css";
 import About from "./routes/About.jsx";
 import Contact from "./routes/Contact.jsx";
-import Gallary from "./routes/Gallary.jsx";
+// import Gallary from "./routes/Gallary.jsx";
 import Review from "./routes/Review.jsx";
 import Services from "./routes/Services.jsx";
 
@@ -29,10 +29,10 @@ const router = createBrowserRouter([
         path: "contact",
         element: <Contact />,
       },
-      {
-        path: "gallary",
-        element: <Gallary />,
-      },
+      // {
+      //   path: "gallary",
+      //   element: <Gallary />,
+      // },
       {
         path: "review",
         element: <Review />,
